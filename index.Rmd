@@ -13,6 +13,7 @@ output:
       highlightStyle: dracula
       highlightLines: true
       countIncrementalSlides: false
+      beforeInit: "macros.js"
 editor_options: 
   chunk_output_type: console
 ---
@@ -82,6 +83,6 @@ layout: true
 
 ---
 
-### It's All Fun and Games Until
+class: center middle
 
-![illustration of skateboarding on a yard rake and having it hit the rider in the face.](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
+![:scale 40%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
