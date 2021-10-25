@@ -85,13 +85,22 @@ layout: true
 
 class: center middle
 
-![:scale 50%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
+![:scale 45%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
 
 ---
 
-class: center middle
+# Who's on first?
 
-![:scale 50%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/r_rstudio_ide.png)
+<br>
+
+.pull-left[
+### R - the programming language
+### RStudio - the company
+### RStudio - the IDE
+]
+
+<div style = "position: absolute;top: 0px;right: 0;"><img src="https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/r_rstudio_ide.png" alt="stached logos for R, RStudio, and the RStudio IDE." width="485"></img></div>
+
 
 
 
