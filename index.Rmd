@@ -72,4 +72,6 @@ class: title-slide, left, top
 
 <div style = "position: absolute;top: 0px;right: 0;"><img src="https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/board_at_sunset.jpg" alt="A person jumping their skateboard onto a stair handrail at sunset." width="525"></img></div>
 
+<div style = "position: absolute;bottom: 5px;right: 5px;font-size: .25rem;color: #fff;z-index: 999;"><p>Photo by <a href="https://unsplash.com/@nadineshaabana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadine Shaabana</a> on <a href="https://unsplash.com/s/photos/tricks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></div>
+  
 ---
