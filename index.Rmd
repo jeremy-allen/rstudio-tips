@@ -75,3 +75,13 @@ class: title-slide, left, top
 <div style = "position: absolute;bottom: 5px;right: 5px;font-size: .25rem;color: #fff;z-index: 999;"><p>Photo by <a href="https://unsplash.com/@nadineshaabana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadine Shaabana</a> on <a href="https://unsplash.com/s/photos/tricks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></div>
   
 ---
+
+layout: true
+
+<div class="my-footer"><span>https://colorado.rstudio.com/rsc/rstudio-tips-and-tricks/</span></div>
+
+---
+
+### It's All Fun and Games Until
+
+![illustration of skateboarding on a yard rake and having it hit the rider in the face.](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
