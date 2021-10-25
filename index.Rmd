@@ -1,6 +1,6 @@
 ---
 title: "RStudio Tips"
-subtitle: "In the IDE, tidyverse, and beyond"
+subtitle: "and maybe tricks"
 author: "Your guide: Jeremy Allen"
 date: "Oct 2021 - updated `r Sys.Date()`"
 output:
@@ -85,4 +85,13 @@ layout: true
 
 class: center middle
 
-![:scale 40%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
+![:scale 50%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
+
+---
+
+class: center middle
+
+![:scale 50%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/r_rstudio_ide.png)
+
+
+
