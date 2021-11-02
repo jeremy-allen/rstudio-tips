@@ -1,0 +1,139 @@
+---
+title: "snippets"
+author: "Me!"
+date: "`r Sys.Date()`"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Snippets! How do they work?
+
+First, let's prep some data
+
+```{r packages, message=FALSE, warning=FALSE, include=FALSE}
+
+library(palmerpenguins)
+library(tidyverse)
+library(janitor)
+library(here)
+
+```
+
+## Get data from the palmerpenguins package and inspect names
+
+```{r}
+
+df <- penguins_raw
+
+df
+
+# gross!
+names(df)
+
+# clean those names
+df %>% 
+  clean_names() %>% 
+  names()
+
+```
+
+## How about those column names?
+
+A little regex first\
+Pro tip: match anything that you put in []
+
+```{r}
+
+# are there spaces or capital letters in col names?
+str_detect(names(df), "[\\sA-Z()/-]")
+# but we only want one answer, so wrap in any()
+any(str_detect(names(df), "[\\sA-Z()/-]"))
+
+```
+
+## Pro tip: str_view() to see string matches (requires htmlwidgets)
+
+```{r}
+
+# let's see where our pattern matches
+str_view_all(names(df), "[\\sA-Z()/-]")
+
+```
+
+# Finally, a snippet!
+
+Pro tip: cmd-i to fix bad indentation
+
+```{r}
+
+# snippet time! type "if" then hit shift-tab
+# paste in our regex condition and our clean_names code
+
+
+
+# highlight the if statement above then hit cmd-I to fix the indentation
+
+# inspect
+names(df)
+
+```
+
+## What will this return now? Someone tell me before runnig it!
+
+```{r}
+
+any(str_detect(names(df), "[\\sA-Z()/-]"))
+
+```
+
+## Can we pipe that? Yes we can.
+
+Pro tip: cmd-shift-m to insert pipe
+
+```{r}
+
+names(df) %>% 
+  str_detect("[\\sA-Z()/-]") %>% 
+  any()
+
+```
+
+## Assign the clean names
+Pro tip: alt-(dash) for assignment arrow
+
+```{r}
+
+df <- df %>% 
+  clean_names()
+
+```
+
+## More snippets! Functions
+Pro tip: type fun then hit shift-tab  
+Pro tip: cmd-f for find (and replace)
+```{r}
+
+# type fun then hit shift-tab
+# name it clean_if_bad_names
+# one arg called x
+# put our if statement in the body
+# cmd-i to fix indent
+# cmd-f to change df to x
+
+clean_if_bad_names <- function(x) {
+  
+  if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
+    clean_names(x)
+  }
+  
+}
+
+# reset df
+df <- penguins_raw
+
+clean_if_bad_names(x = df)
+
+
+```
+

@@ -1,0 +1,72 @@
+---
+title: "functions"
+author: "Me!"
+date: "`r Sys.Date()`"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r packages, message=FALSE, warning=FALSE, include=FALSE}
+
+library(palmerpenguins)
+library(tidyverse)
+library(janitor)
+library(here)
+
+```
+
+# Functions - let's inspect!
+
+```{r }
+
+clean_if_bad_names <- function(x) {
+  
+  if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
+    clean_names(x)
+  }
+  
+}
+
+# reset df
+df <- penguins_raw
+
+clean_if_bad_names(x = df)
+
+```
+
+# But we don't really need that silly function
+
+clean_names() from janitor looks for more bad elements in names\
+How do we know?\
+Pro tip: cmd-click on the function name below
+
+```{r echo=TRUE, eval=FALSE}
+
+janitor::clean_names()
+
+```
+
+![](images/inspect1.png)\
+  
+Select the data.frame method from the drop down
+![](images/inspect2.png)
+
+Then cmd click the internal function make_clean_names()\
+![](images/inspect3.png)
+
+Now we see the internals on janitor's make_clean_names(), we see it cleans up apostrophes and other things our function didn't.  
+![](images/inspect4.png)
+
+# What other functions do you want to inspect?  
+
+```{r echo=TRUE, eval=FALSE}
+
+dplyr::arrange()
+
+```
+
+## Chunk options in gear
+In the chunk above, the options in the gear icon do not provide a way for:  
+`{r echo=TRUE, eval=FALSE}`  
+which means to show the code but do not run the code. Am I missing something?
