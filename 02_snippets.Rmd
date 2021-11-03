@@ -9,12 +9,11 @@ editor_options:
 
 # Review
 
-- shift+cmd+p for command palette 
-- shift+cmd+m for pipe
-- alt-dash for assignment
-- cmd+, for global options
-- how do we fold code?
-
+-   shift+cmd+p for command palette
+-   shift+cmd+m for pipe
+-   alt-dash for assignment
+-   cmd+, for global options
+-   how do we fold code?
 
 # Snippets! How do they work?
 
@@ -79,7 +78,10 @@ Pro tip: cmd+i to fix bad indentation
 # snippet time! type "if" then hit shift+tab
 # paste in our regex condition and our clean_names code
 
-
+if (any(str_detect(names(df), "[\\sA-Z()/-]"))) {
+  df <- df %>% 
+    clean_names()
+}
 
 # highlight the if statement above then hit cmd+i to fix the indentation
 
@@ -88,7 +90,7 @@ names(df)
 
 ```
 
-## What will this return now? Someone tell me before runnig it!
+## What will this return now? Someone tell me before running it!
 
 ```{r}
 
@@ -122,7 +124,7 @@ df <- df %>%
 ## More snippets! Functions
 
 Pro tip: type fun then hit shift+tab\
-Pro tip: cmd+f for find (and replace)  
+Pro tip: cmd+f for find (and replace)
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -133,7 +135,12 @@ Pro tip: cmd+f for find (and replace)
 # cmd+i to fix indent
 # cmd+f to change df to x
 
-
+clean_if_bad_names <- function(x) {
+  if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
+    clean_names(x)
+  }
+  x
+}
 
 # reset df
 df <- penguins_raw
