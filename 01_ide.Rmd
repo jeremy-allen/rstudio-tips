@@ -13,10 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Slides
 
-[https://jeremy-allen.github.io/rstudio-tips/](https://jeremy-allen.github.io/rstudio-tips/)  
+<https://jeremy-allen.github.io/rstudio-tips/>
 
-
-```{r packages}
+```{r packages, echo=TRUE, message=FALSE, warning=FALSE}
 
 library(palmerpenguins)
 library(tidyverse)
@@ -74,7 +73,7 @@ Use shift+cmd+p to access the command palette and:
 
 ## Expand the outliner
 
-Pro tip: Navigate your document with the outliner  
+Pro tip: Navigate your document with the outliner\
 also ctl+shift+o
 
 ![](images/out1.png)\
@@ -86,22 +85,25 @@ also ctl+shift+o
 
 # Code folding
 
-Go back up to the line "## set repo for RStudio Public Package Manager"  
-Click the little triangle next to the line number  
+Go back up to the line "\#\# set repo for RStudio Public Package Manager"\
+Click the little triangle next to the line number
 
 ![](images/fold.gif)\
 
 # Command History in the console
-pro tip: type a couple of letters then cmd+up for visual of matches or just up for last command  
 
-![](images/history.gif)\  
+pro tip: type a couple of letters then cmd+up for visual of matches or just up for last command
+
+![](images/history.gif) 
 
 # Open File in New Column!
-Pro tip: great for Shiny apps when you have ui, sever, and css files  
+
+Pro tip: great for Shiny apps when you have ui, sever, and css files
 
 ![](images/columns.gif)\
 
 # git in the IDE
+
 Pro tip: cmd+a to select all
 
 In the git tab, click once on the row of the top item.\
@@ -115,7 +117,7 @@ Pro tip: revert
 
 Save, Commit, and Push, then
 
-- add a bunch of text below and save the file
+-   add a bunch of text below and save the file
 
 -   go to the git tab
 
