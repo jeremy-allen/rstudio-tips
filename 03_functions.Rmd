@@ -16,6 +16,13 @@ library(here)
 
 ```
 
+# Review
+
+- shift+cmd+p for command palette
+- fun/if/for/lib/ec then shift+tab to add snippets
+- esquisse add-in to generate plot code in a GUI
+- alt-dash for assignment  
+
 # Functions - let's inspect!
 
 ```{r }
@@ -25,6 +32,8 @@ clean_if_bad_names <- function(x) {
   if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
     clean_names(x)
   }
+  
+  x
   
 }
 

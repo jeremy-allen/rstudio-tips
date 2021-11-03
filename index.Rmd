@@ -19,11 +19,9 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE,
-        eval = TRUE)
-library(tidyverse)
-library(gt)
-library(usethis)
+
+options(htmltools.dir.version = FALSE, eval = TRUE)
+
 ```
 
 ```{r metathis, echo=FALSE}
@@ -103,5 +101,14 @@ class: center middle
 
 ---
 
+# Let's go to the IDE and dig in!
 
+<br>
 
+.pull-left[
+#### IDE
+#### Snippets
+#### Functions
+#### Search
+#### What are tips and tricks anyway?
+]

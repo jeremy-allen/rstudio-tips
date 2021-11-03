@@ -7,6 +7,15 @@ editor_options:
   chunk_output_type: console
 ---
 
+# Review
+
+- shift+cmd+p for command palette 
+- shift+cmd+m for pipe
+- alt-dash for assignment
+- cmd+, for global options
+- how do we fold code?
+
+
 # Snippets! How do they work?
 
 First, let's prep some data
@@ -63,16 +72,16 @@ str_view_all(names(df), "[\\sA-Z()/-]")
 
 # Finally, a snippet!
 
-Pro tip: cmd-i to fix bad indentation
+Pro tip: cmd+i to fix bad indentation
 
 ```{r}
 
-# snippet time! type "if" then hit shift-tab
+# snippet time! type "if" then hit shift+tab
 # paste in our regex condition and our clean_names code
 
 
 
-# highlight the if statement above then hit cmd-I to fix the indentation
+# highlight the if statement above then hit cmd+i to fix the indentation
 
 # inspect
 names(df)
@@ -89,7 +98,7 @@ any(str_detect(names(df), "[\\sA-Z()/-]"))
 
 ## Can we pipe that? Yes we can.
 
-Pro tip: cmd-shift-m to insert pipe
+Pro tip: cmd+shift+m to insert pipe
 
 ```{r}
 
@@ -101,7 +110,7 @@ names(df) %>%
 
 ## Assign the clean names
 
-Pro tip: alt-(dash) for assignment arrow
+Pro tip: alt+dash for assignment arrow
 
 ```{r}
 
@@ -112,17 +121,17 @@ df <- df %>%
 
 ## More snippets! Functions
 
-Pro tip: type fun then hit shift-tab\
-Pro tip: cmd-f for find (and replace)
+Pro tip: type fun then hit shift+tab\
+Pro tip: cmd+f for find (and replace)  
 
 ```{r echo=TRUE, eval=FALSE}
 
-# type fun then hit shift-tab
+# type fun then hit shift+tab
 # name it clean_if_bad_names
 # one arg called x
 # put our if statement in the body
-# cmd-i to fix indent
-# cmd-f to change df to x
+# cmd+i to fix indent
+# cmd+f to change df to x
 
 
 
@@ -135,9 +144,9 @@ clean_if_bad_names(x = df)
 
 ## More snippets! For loops
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 
-# type for then hit shift-tab
+# type for then hit shift+tab
 
 
 
@@ -153,7 +162,7 @@ Pro tip: make your own
 
 The contents of the snippet should be indented below using the <tab> key (rather than with spaces). Variables can be defined using the form {1:varname}.
 
-**Everyday Carry** - hit shift-tab after the ec
+**Everyday Carry** - hit shift+tab after the ec
 
 ```{r echo=TRUE, eval=FALSE}
 

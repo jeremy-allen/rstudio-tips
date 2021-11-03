@@ -172,6 +172,15 @@ pre code {
 </div>
 
 
+<div id="review" class="section level1">
+<h1>Review</h1>
+<ul>
+<li>shift+cmd+p for command palette</li>
+<li>fun/if/for/lib/ec then shift+tab to add snippets</li>
+<li>esquisse add-in to generate plot code in a GUI</li>
+<li>alt-dash for assignment</li>
+</ul>
+</div>
 <div id="functions---lets-inspect" class="section level1">
 <h1>Functions - let’s inspect!</h1>
 <pre class="r"><code>clean_if_bad_names &lt;- function(x) {
@@ -180,6 +189,8 @@ pre code {
     clean_names(x)
   }
   
+  x
+  
 }
 
 # reset df
@@ -187,22 +198,22 @@ df &lt;- penguins_raw
 
 clean_if_bad_names(x = df)</code></pre>
 <pre><code>## # A tibble: 344 × 17
-##    study_name sample_number species        region island  stage    individual_id
-##    &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;        
-##  1 PAL0708                1 Adelie Pengui… Anvers Torger… Adult, … N1A1         
-##  2 PAL0708                2 Adelie Pengui… Anvers Torger… Adult, … N1A2         
-##  3 PAL0708                3 Adelie Pengui… Anvers Torger… Adult, … N2A1         
-##  4 PAL0708                4 Adelie Pengui… Anvers Torger… Adult, … N2A2         
-##  5 PAL0708                5 Adelie Pengui… Anvers Torger… Adult, … N3A1         
-##  6 PAL0708                6 Adelie Pengui… Anvers Torger… Adult, … N3A2         
-##  7 PAL0708                7 Adelie Pengui… Anvers Torger… Adult, … N4A1         
-##  8 PAL0708                8 Adelie Pengui… Anvers Torger… Adult, … N4A2         
-##  9 PAL0708                9 Adelie Pengui… Anvers Torger… Adult, … N5A1         
-## 10 PAL0708               10 Adelie Pengui… Anvers Torger… Adult, … N5A2         
-## # … with 334 more rows, and 10 more variables: clutch_completion &lt;chr&gt;,
-## #   date_egg &lt;date&gt;, culmen_length_mm &lt;dbl&gt;, culmen_depth_mm &lt;dbl&gt;,
-## #   flipper_length_mm &lt;dbl&gt;, body_mass_g &lt;dbl&gt;, sex &lt;chr&gt;,
-## #   delta_15_n_o_oo &lt;dbl&gt;, delta_13_c_o_oo &lt;dbl&gt;, comments &lt;chr&gt;</code></pre>
+##    studyName `Sample Number` Species       Region Island Stage   `Individual ID`
+##    &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;          
+##  1 PAL0708                 1 Adelie Pengu… Anvers Torge… Adult,… N1A1           
+##  2 PAL0708                 2 Adelie Pengu… Anvers Torge… Adult,… N1A2           
+##  3 PAL0708                 3 Adelie Pengu… Anvers Torge… Adult,… N2A1           
+##  4 PAL0708                 4 Adelie Pengu… Anvers Torge… Adult,… N2A2           
+##  5 PAL0708                 5 Adelie Pengu… Anvers Torge… Adult,… N3A1           
+##  6 PAL0708                 6 Adelie Pengu… Anvers Torge… Adult,… N3A2           
+##  7 PAL0708                 7 Adelie Pengu… Anvers Torge… Adult,… N4A1           
+##  8 PAL0708                 8 Adelie Pengu… Anvers Torge… Adult,… N4A2           
+##  9 PAL0708                 9 Adelie Pengu… Anvers Torge… Adult,… N5A1           
+## 10 PAL0708                10 Adelie Pengu… Anvers Torge… Adult,… N5A2           
+## # … with 334 more rows, and 10 more variables: Clutch Completion &lt;chr&gt;,
+## #   Date Egg &lt;date&gt;, Culmen Length (mm) &lt;dbl&gt;, Culmen Depth (mm) &lt;dbl&gt;,
+## #   Flipper Length (mm) &lt;dbl&gt;, Body Mass (g) &lt;dbl&gt;, Sex &lt;chr&gt;,
+## #   Delta 15 N (o/oo) &lt;dbl&gt;, Delta 13 C (o/oo) &lt;dbl&gt;, Comments &lt;chr&gt;</code></pre>
 </div>
 <div id="but-we-dont-really-need-that-silly-function" class="section level1">
 <h1>But we don’t really need that silly function</h1>

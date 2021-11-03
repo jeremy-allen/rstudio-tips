@@ -28,7 +28,7 @@ library(here)
 
 # Adjusting Global Options in the RStudio IDE
 
-Pro tip: cmd-, to access global options
+Pro tip: cmd+, to access global options
 
 ## rearrange panels
 
@@ -62,9 +62,9 @@ Then go to [RStudio Public Package Manager](https://packagemanager.rstudio.com/c
 
 ![](images/scroll.png)
 
-## shift-cmd-p then do anything
+## shift+cmd+p then do anything
 
-Use shift-cmd-p to access the command palette and:
+Use shift+cmd+p to access the command palette and:
 
 -   Toggle Memory Usage Display in Environment Pane
 -   Syntax highlighting in console output
@@ -84,12 +84,19 @@ Pro tip: Navigate your document with the outliner
 
 ![](images/out3.png)\
 
+# Code folding
+
+Go back up to the line "## set repo for RStudio Public Package Manager"  
+Click the little triangle next to the line number  
+
+![](images/fold.gif)\
+
 # git in the IDE
 
-Pro tip: cmd-a to select all
+Pro tip: cmd+a to select all
 
 In the git tab, click once on the row of the top item.\
-Then, cmd-a to select them all. Then, check one box to check them all.
+Then, cmd+a to select them all. Then, check one box to check them all.
 
 ![](images/git_all.gif)\
 
@@ -99,7 +106,7 @@ Pro tip: revert
 
 Add a bunch text below and save the file
 
--   git tab
+-   go to the git tab
 
 -   select file
 
