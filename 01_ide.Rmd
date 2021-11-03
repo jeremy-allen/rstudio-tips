@@ -93,4 +93,16 @@ Then, cmd-a to select them all. Then, check one box to check them all.
 
 ![](images/git_all.gif)\
 
+Pro tip: revert
 
+![](images/revert.gif)\
+
+Add a bunch text below and save the file
+
+-   git tab
+
+-   select file
+
+-   More
+
+-   Revert
