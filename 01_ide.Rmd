@@ -92,3 +92,5 @@ In the git tab, click once on the row of the top item.\
 Then, cmd-a to select them all. Then, check one box to check them all.
 
 ![](images/git_all.gif)\
+
+## let's revert this line
