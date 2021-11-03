@@ -48,17 +48,16 @@ janitor::clean_names()
 ```
 
 ![](images/inspect1.png)\
-  
-Select the data.frame method from the drop down
-![](images/inspect2.png)
+
+Select the data.frame method from the drop down ![](images/inspect2.png)
 
 Then cmd click the internal function make_clean_names()\
 ![](images/inspect3.png)
 
-Now we see the internals on janitor's make_clean_names(), we see it cleans up apostrophes and other things our function didn't.  
+Now we see the internals on janitor's make_clean_names(), we see it cleans up apostrophes and other things our function didn't.\
 ![](images/inspect4.png)
 
-# What other functions do you want to inspect?  
+# What other functions do you want to inspect?
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -66,7 +65,60 @@ dplyr::arrange()
 
 ```
 
-## Chunk options in gear
-In the chunk above, the options in the gear icon do not provide a way for:  
-`{r echo=TRUE, eval=FALSE}`  
+## Water cooler chat: Chunk options in gear
+
+In the chunk above, the options in the gear icon do not provide a way for:\
+`{r echo=TRUE, eval=FALSE}`\
 which means to show the code but do not run the code. Am I missing something?
+
+## Function and snippet mashup
+
+Have you seen people post these cool images of their code: ![](images/snip.png)  
+
+The [carbonate package](https://github.com/yonicd/carbonate) makes those.\
+We are going to combine some carbonate functions into one function using purrr::compose()
+
+```{r echo=TRUE, eval=FALSE}
+
+# compose the set of carbonate functions to open your copied code at the carbonate URL
+snip <- purrr::compose(
+ ~ my_code$browse(),
+ ~ assign(x$template, "one-dark", pos = ".GlobalEnv"),
+ ~ assign("my_code", carbon$new(), pos = ".GlobalEnv"),
+ ~ library(carbonate)
+)
+
+```
+
+### Copy some code to your clipboard, then
+
+(will not work if your system does not have the xclip or xsel utility)
+
+```{r echo=TRUE, eval=FALSE}
+snip()
+```
+
+More manually if you cannot grab code from your clipboard
+
+```{r echo=TRUE, eval=FALSE}
+
+x <- carbon$new(
+  '
+  clean_if_bad_names <- function(x) {
+  
+  if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
+    clean_names(x)
+  }
+  
+}
+  '
+)
+
+# available templates
+x$get_templates()
+
+# chose one and send to browser
+x$template <- "one-dark"
+x$browse()
+
+```

@@ -52,7 +52,7 @@ any(str_detect(names(df), "[\\sA-Z()/-]"))
 
 ```
 
-## Pro tip: str_view() to see string matches (requires htmlwidgets)
+Pro tip: str_view() to see string matches (requires htmlwidgets)
 
 ```{r}
 
@@ -100,6 +100,7 @@ names(df) %>%
 ```
 
 ## Assign the clean names
+
 Pro tip: alt-(dash) for assignment arrow
 
 ```{r}
@@ -110,9 +111,11 @@ df <- df %>%
 ```
 
 ## More snippets! Functions
-Pro tip: type fun then hit shift-tab  
+
+Pro tip: type fun then hit shift-tab\
 Pro tip: cmd-f for find (and replace)
-```{r}
+
+```{r echo=TRUE, eval=FALSE}
 
 # type fun then hit shift-tab
 # name it clean_if_bad_names
@@ -121,19 +124,49 @@ Pro tip: cmd-f for find (and replace)
 # cmd-i to fix indent
 # cmd-f to change df to x
 
-clean_if_bad_names <- function(x) {
-  
-  if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
-    clean_names(x)
-  }
-  
-}
+
 
 # reset df
 df <- penguins_raw
 
 clean_if_bad_names(x = df)
 
+```
+
+## More snippets! For loops
+
+```{r}
+
+# type for then hit shift-tab
+
+
 
 ```
 
+## More snippets! See them all
+
+Pro tip: make your own
+
+![](images/snippets1.png)
+
+![](images/snippets2.png)
+
+The contents of the snippet should be indented below using the <tab> key (rather than with spaces). Variables can be defined using the form {1:varname}.
+
+**Everyday Carry** - hit shift-tab after the ec
+
+```{r echo=TRUE, eval=FALSE}
+
+ec
+
+```
+
+I use that as lightweight version of library(tidyverse) when I don't want or need to load the entire tidyverse - particular important for a production environment that needs to be trim.
+
+## ggplot2 GUI plot builder
+
+from the package esquisse ![](images/esqui1.png)
+
+![](images/esqui2.png)
+
+![](images/esqui3.png)
