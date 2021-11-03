@@ -27,7 +27,7 @@ nhsnumber::is_valid(x)
 
 ```
 
-## Get checksum  
+## Get checksum
 
 ```{r}
 
