@@ -195,4 +195,21 @@ div(
 ```
 
 ![](images/parens.gif)  
+# Back to functions!
+
+## Got code?
+Pro tip: highlight code, then in Code menu, select 
+```{r echo=TRUE, eval=FALSE}
+
+# in the code menu, select extract function
+
+df %>% 
+    filter(
+      Sex == "MALE"
+      ) %>% 
+    summarise(
+      mean_body_mass = mean(`Body Mass (g)`, na.rm = TRUE)
+    )
+
+```
 
