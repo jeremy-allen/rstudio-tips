@@ -22,6 +22,7 @@ library(here)
 - fun/if/for/lib/ec then shift+tab to add snippets
 - esquisse add-in to generate plot code in a GUI
 - alt-dash for assignment  
+- cmd+up in console to see history
 
 # Functions - let's inspect!
 
@@ -114,11 +115,11 @@ More manually if you cannot grab code from your clipboard
 x <- carbon$new(
   '
   clean_if_bad_names <- function(x) {
-  
+
   if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
     clean_names(x)
   }
-  
+
 }
   '
 )
@@ -131,3 +132,67 @@ x$template <- "one-dark"
 x$browse()
 
 ```
+
+# Back to IDE shortcuts for a moment
+
+## Comment and not
+Pro tip: highlight multiple lines of code, shift-ctl-c to comment all  
+
+![](images/comments.gif)
+
+## Move line
+Pro tip: alt+up or alt+down to move lines  
+
+![](images/move.gif)  
+
+## Multi-line
+Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
+You try: add commas after starts_with() and mean  
+
+```{r echo=TRUE, eval=FALSE}
+
+df %>% 
+  summarise(
+    across(
+      starts_with("culmen")
+      mean
+      na.rm = TRUE
+      )
+    )
+
+```
+
+![](images/multi.gif)  
+
+## Which parentheses?
+Pro tip: double click one of the parentheses to highlight what it contains  
+
+```{r echo=TRUE, eval=FALSE}
+
+
+div(
+  class = "outer",
+  div(
+    class = "container",
+    div(class = "data",
+        df %>% 
+          filter(
+            str_detect(Species, "Chin"),
+            Sex == "MALE",
+            Island == "Dream"
+          ) %>% 
+          summarise(
+            across(
+              starts_with("culmen"),
+              mean,
+              na.rm = TRUE
+            )
+          )
+    )
+  )
+)
+
+```
+
+![](images/parens.gif)  
+
