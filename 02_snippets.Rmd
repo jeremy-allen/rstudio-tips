@@ -1,11 +1,16 @@
 ---
-title: "snippets"
-author: "Me!"
-date: "`r Sys.Date()`"
+title: "Snippets"
+subtitle: "part 2 of the Tips and Tricks Series"
+author: "Jeremy Allen"
+date: "Nov 2, 2021, updated on `r Sys.Date()`"
 output: html_document
 editor_options: 
   chunk_output_type: console
 ---
+---
+
+<br>  
+<br>  
 
 # Review
 
