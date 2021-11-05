@@ -55,7 +55,7 @@ clean_if_bad_names(x = df)
 
 clean_names() from the janitor package looks for more bad elements in names\
 How do we know?\
-`r emo::ji("smile")` Pro tip: cmd+click on the function name below
+`r emo::ji("smile")` Pro tip: cmd+click on a function name to inspect it's body
 
 ```{r echo=TRUE, eval=FALSE}
 

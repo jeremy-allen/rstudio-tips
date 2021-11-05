@@ -144,7 +144,7 @@ Go back up to the line "set repo for RStudio Public Package Manager"\
 
 # Command History in the console
 
-`r emo::ji("smile")` Pro tip: type a couple of letters then cmd+up for visual of matches or just up for last command
+`r emo::ji("smile")` Pro tip: in the console type a couple of letters then cmd+up for visual of matches
 
 ![](images/history.gif) 
 
@@ -152,7 +152,7 @@ Go back up to the line "set repo for RStudio Public Package Manager"\
 
 # Open File in New Column
 
-`r emo::ji("smile")` Pro tip: great for Shiny apps when you have ui, sever, and css files
+`r emo::ji("smile")` Pro tip: open file in new column is great for Shiny apps when you have ui, sever, and css files
 
 ![](images/columns.gif)\
 

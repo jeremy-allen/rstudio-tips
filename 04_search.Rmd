@@ -35,13 +35,13 @@ moving on...
 
 ## Search tabs
 
-Pro tip: ctl+. to search file tabs
+`r emo::ji("smile")` Pro tip: ctl+. to search file tabs
 
 ![](images/tabs.gif)
 
 ## Find in Files
 
-Pro tip: shift+cmd+f to search within file, also under Edit menu
+`r emo::ji("smile")` Pro tip: shift+cmd+f to search across many file, also under Edit menu
 
 -   common R files
 -   exclude \*.html
@@ -52,7 +52,7 @@ Pro tip: shift+cmd+f to search within file, also under Edit menu
 
 ![](images/replace.gif)
 
-# Google Programmable Search Engine
+# `r emo::ji("smile")` Google Programmable Search Engine
 
 [Google Programmable Search Engine](https://programmablesearchengine.google.com/about/)  
 

@@ -1,0 +1,66 @@
+---
+title: "Tips Index"
+subtitle: "Part 6 of the RStudio Tips and Tricks Series"
+author: "Jeremy Allen"
+date: "Nov 2, 2021, updated on `r Sys.Date()`"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+------------------------------------------------------------------------
+
+<br>
+<br>
+
+# List of all `r emo::ji("smile")` Pro tips from the series
+
+## Settings  
+`r emo::ji("smile")` Pro tip: cmd+, to access global options  
+`r emo::ji("smile")` Pro tip: If you are on a Linux server, see what operating system you are on by running this in your console:  
+`system("lsb_release -a")`  
+`r emo::ji("smile")` Pro tip: Set [RStudio Public Package Manager](https://packagemanager.rstudio.com/client/) as your repo
+
+## General  
+`r emo::ji("smile")` Pro tip: ctl+shift+o to navigate your document with the outline  
+`r emo::ji("smile")` Pro tip: in the console type a couple of letters then cmd+up for visual of matches  
+`r emo::ji("smile")` Pro tip: open file in new column is great for Shiny apps when you have ui, sever, and css files  
+`r emo::ji("smile")` Pro tip: highlight multiple lines of code, shift+ctl+c to comment all  
+`r emo::ji("smile")` Pro tip: alt+up or alt+down to move lines  
+`r emo::ji("smile")` Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
+`r emo::ji("smile")` Pro tip: double click one of the parentheses to highlight what it contains  
+`r emo::ji("smile")` Pro tip: cmd+i to fix bad indentation  
+`r emo::ji("smile")` Pro tip: cmd+shift+m to insert pipe  
+`r emo::ji("smile")` Pro tip: alt+dash for assignment arrow  
+`r emo::ji("smile")` Pro tip: cmd+f for find (and replace)  
+
+## Git  
+`r emo::ji("smile")` Pro tip: ctl+alt+m to open the git commit window  
+`r emo::ji("smile")` Pro tip: can stage or discard chunks, even lines  
+`r emo::ji("smile")` Pro tip: select first file then cmd+a to highlight all, then check one to check all  
+
+## Regex  
+`r emo::ji("smile")` Pro tip: match anything that you put in []  
+`r emo::ji("smile")` Pro tip: str_view() to see string matches (requires htmlwidgets)  
+
+## Snippets  
+`r emo::ji("smile")` Pro tip: shift+tab to expand a snippet  
+`r emo::ji("smile")` Pro tip: type fun then shift+tab or shiny then shift+tab  
+`r emo::ji("smile")` Pro tip: If you are new to ggplot2, you can install the esquisse package, which also installs the ggplot2 builder addin, which you can use to build a plot using a GUI, then have the code, too!  
+
+## Functions  
+`r emo::ji("smile")` Pro tip: cmd+click on a function name to inspect it's body  
+`r emo::ji("smile")` combine some functions into one function using purrr::compose()  
+`r emo::ji("smile")` Pro tip: highlight code, then in Code menu, select extract function  
+
+## Search  
+`r emo::ji("smile")` Pro tip: ctl+. to search file tabs  
+`r emo::ji("smile")` Pro tip: shift+cmd+f to search and replace across many files, also under Edit menu  
+`r emo::ji("smile")` [Google Programmable Search Engine](https://programmablesearchengine.google.com/about/)  
+
+------------------------------------------------------------------------
+
+All code for the RStudio Tips and Tricks Series is on GitHub at  
+<https://github.com/jeremy-allen/rstudio-tips>
+  
+Slides for the RStudio Tips and Tricks Series are available  
+<https://jeremy-allen.github.io/rstudio-tps/>

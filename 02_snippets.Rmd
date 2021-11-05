@@ -85,6 +85,7 @@ str_view_all(names(df), "[\\sA-Z()/-]")
 
 # Finally, a snippet!
 
+`r emo::ji("smile")` Pro tip: shift+tab to expand a snippet  
 `r emo::ji("smile")` Pro tip: cmd+i to fix bad indentation
 
 ```{r}
