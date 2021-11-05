@@ -142,91 +142,15 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)
 
 <br>  
 
-# Back to IDE shortcuts for a moment
-
-## Comment and not
-`r emo::ji("smile")` Pro tip: highlight multiple lines of code, shift-ctl-c to comment all  
-
-![](images/comments.gif)
-
-<br>  
-
-## Move line
-`r emo::ji("smile")` Pro tip: alt+up or alt+down to move lines  
-
-![](images/move.gif)  
-
-<br>  
-
-## Multi-line
-`r emo::ji("smile")` Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
-You try: add commas after starts_with() and mean  
-
-```{r echo=TRUE, eval=FALSE}
-
-df %>% 
-  summarise(
-    across(
-      starts_with("culmen")
-      mean
-      na.rm = TRUE
-      )
-    )
-
-```
-
-![](images/multi.gif)  
-
-<br>  
-
-## Which parentheses?
-`r emo::ji("smile")` Pro tip: double click one of the parentheses to highlight what it contains  
-
-```{r echo=TRUE, eval=FALSE}
-
-
-div(
-  class = "outer",
-  div(
-    class = "container",
-    div(class = "data",
-        df %>% 
-          filter(
-            str_detect(Species, "Chin"),
-            Sex == "MALE",
-            Island == "Dream"
-          ) %>% 
-          summarise(
-            across(
-              starts_with("culmen"),
-              mean,
-              na.rm = TRUE
-            )
-          )
-    )
-  )
-)
-
-```
-
-![](images/parens.gif)  
-<br>  
-
-# Back to functions!
-
 ## Got code?
-Pro tip: highlight code, then in Code menu, select extract function
+`r emo::ji("smile")` Pro tip: highlight code, then in Code menu, select extract function
 ```{r echo=TRUE, eval=FALSE}
 
 # in the code menu, select extract function
 
 df %>% 
-    filter(
-      Sex == "MALE"
-      ) %>% 
-    summarise(
-      mean_body_mass = mean(`Body Mass (g)`, na.rm = TRUE)
-    )
+    filter(Sex == "MALE") %>% 
+    summarise(mean_body_mass = mean(`Body Mass (g)`, na.rm = TRUE))
 
 ```
 
