@@ -15,10 +15,11 @@ editor_options:
 # List of all `r emo::ji("smile")` Pro tips from the series
 
 ## Settings  
-`r emo::ji("smile")` Pro tip: cmd+, to access global options  
+`r emo::ji("smile")` Pro tip: cmd+, to access global options and do all sorts of things like change appearance, change layout, set up package repos, git, Python interpreter and more!  
 `r emo::ji("smile")` Pro tip: If you are on a Linux server, see what operating system you are on by running this in your console:  
 `system("lsb_release -a")`  
-`r emo::ji("smile")` Pro tip: Set [RStudio Public Package Manager](https://packagemanager.rstudio.com/client/) as your repo
+`r emo::ji("smile")` Pro tip: Set [RStudio Public Package Manager](https://packagemanager.rstudio.com/client/) as your repo  
+`r emo::ji("smile")` Pro tip: shift+cmd+p for the command palette, then do anything  
 
 ## General  
 `r emo::ji("smile")` Pro tip: ctl+shift+o to navigate your document with the outline  
@@ -32,6 +33,9 @@ editor_options:
 `r emo::ji("smile")` Pro tip: cmd+shift+m to insert pipe  
 `r emo::ji("smile")` Pro tip: alt+dash for assignment arrow  
 `r emo::ji("smile")` Pro tip: cmd+f for find (and replace)  
+
+## Jobs
+`r emo::ji("smile")` Pro tip: execute code or scripts as jobs in separate R sessions so you can keep working in your IDE  
 
 ## Git  
 `r emo::ji("smile")` Pro tip: ctl+alt+m to open the git commit window  
@@ -49,7 +53,7 @@ editor_options:
 
 ## Functions  
 `r emo::ji("smile")` Pro tip: cmd+click on a function name to inspect it's body  
-`r emo::ji("smile")` combine some functions into one function using purrr::compose()  
+`r emo::ji("smile")` Pro tip: combine some functions into one function using purrr::compose()  
 `r emo::ji("smile")` Pro tip: highlight code, then in Code menu, select extract function  
 
 ## Search  

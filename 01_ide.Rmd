@@ -229,7 +229,12 @@ div(
 
 ![](images/parens.gif)
 
-<br>
+<br
+
+# Execute long-running code in jobs
+`r emo::ji("smile")` Pro tip: execute code or scripts as jobs in separate R sessions so you can keep working in your IDE  
+
+![Jobs](images/job1.gif)  
 
 # git in the IDE (a very short intro)
 
