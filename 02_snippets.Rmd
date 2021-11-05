@@ -1,16 +1,17 @@
 ---
 title: "Snippets"
-subtitle: "part 2 of the Tips and Tricks Series"
+subtitle: "part 2 of the RStdio Tips and Tricks Series"
 author: "Jeremy Allen"
 date: "Nov 2, 2021, updated on `r Sys.Date()`"
 output: html_document
 editor_options: 
   chunk_output_type: console
 ---
----
 
-<br>  
-<br>  
+------------------------------------------------------------------------
+
+<br>\
+<br>
 
 # Review
 
@@ -19,6 +20,8 @@ editor_options:
 -   alt-dash for assignment
 -   cmd+, for global options
 -   how do we fold code?
+
+<br>
 
 # Snippets! How do they work?
 
@@ -32,6 +35,8 @@ library(janitor)
 library(here)
 
 ```
+
+<br>
 
 ## Get data from the palmerpenguins package and inspect names
 
@@ -51,10 +56,12 @@ df %>%
 
 ```
 
+<br>
+
 ## How about those column names?
 
 A little regex first\
-Pro tip: match anything that you put in []
+`r emo::ji("smile")` Pro tip: match anything that you put in []
 
 ```{r}
 
@@ -65,7 +72,7 @@ any(str_detect(names(df), "[\\sA-Z()/-]"))
 
 ```
 
-Pro tip: str_view() to see string matches (requires htmlwidgets)
+`r emo::ji("smile")` Pro tip: str_view() to see string matches (requires htmlwidgets)
 
 ```{r}
 
@@ -74,18 +81,25 @@ str_view_all(names(df), "[\\sA-Z()/-]")
 
 ```
 
+<br>
+
 # Finally, a snippet!
 
-Pro tip: cmd+i to fix bad indentation
+`r emo::ji("smile")` Pro tip: cmd+i to fix bad indentation
 
 ```{r}
 
 # snippet time! type "if" then hit shift+tab
 # paste in our regex condition and our clean_names code
 
+# try yours right below here:
+
+
+
+# should look like this when you're done
 if (any(str_detect(names(df), "[\\sA-Z()/-]"))) {
   df <- df %>% 
-    clean_names()
+  clean_names()
 }
 
 # highlight the if statement above then hit cmd+i to fix the indentation
@@ -95,6 +109,8 @@ names(df)
 
 ```
 
+<br>
+
 ## What will this return now? Someone tell me before running it!
 
 ```{r}
@@ -103,9 +119,11 @@ any(str_detect(names(df), "[\\sA-Z()/-]"))
 
 ```
 
-## Can we pipe that? Yes we can.
+<br>
 
-Pro tip: cmd+shift+m to insert pipe
+## Can we pipe that? Yes we can. Inside to outside.
+
+`r emo::ji("smile")` Pro tip: cmd+shift+m to insert pipe
 
 ```{r}
 
@@ -115,21 +133,25 @@ names(df) %>%
 
 ```
 
+<br>
+
 ## Assign the clean names
 
-Pro tip: alt+dash for assignment arrow
+`r emo::ji("smile")` Pro tip: alt+dash for assignment arrow
 
-```{r}
+```{r echo=TRUE, eval=FALSE}
 
 df <- df %>% 
   clean_names()
 
 ```
 
+<br>
+
 ## More snippets! Functions
 
-Pro tip: type fun then hit shift+tab\
-Pro tip: cmd+f for find (and replace)
+`r emo::ji("smile")` Pro tip: type fun then hit shift+tab\
+`r emo::ji("smile")` Pro tip: cmd+f for find (and replace)
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -140,33 +162,45 @@ Pro tip: cmd+f for find (and replace)
 # cmd+i to fix indent
 # cmd+f to change df to x
 
+# try yours right below here:
+
+
+
+# should look like this when you are done
 clean_if_bad_names <- function(x) {
   if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
-    clean_names(x)
+    x <- clean_names(x)
+    x
   }
   x
 }
 
-# reset df
+
+# reset our df back to original with bad column names
 df <- penguins_raw
 
-clean_if_bad_names(x = df)
+# use our new function
+df <- clean_if_bad_names(x = df)
 
 ```
+
+<br>
 
 ## More snippets! For loops
 
 ```{r echo=TRUE, eval=FALSE}
 
-# type for then hit shift+tab
+# type for then hit shift+tab:
 
 
 
 ```
 
+<br>
+
 ## More snippets! See them all
 
-Pro tip: make your own
+`r emo::ji("smile")` Pro tip: make your own
 
 ![](images/snippets1.png)
 
@@ -174,7 +208,19 @@ Pro tip: make your own
 
 The contents of the snippet should be indented below using the <tab> key (rather than with spaces). Variables can be defined using the form {1:varname}.
 
-**Everyday Carry** - hit shift+tab after the ec
+Make a snippet called ec with the following lines
+
+library(here)  
+library(ggplot2)  
+library(tidyr)  
+library(dplyr)  
+library(stringr)  
+library(purrr)  
+
+![New Snippet](images/ec_snippet.png "New snippet in the snippet editor pane")\
+<br>
+
+**Everyday Carry** - hit shift+tab after the ec below
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -182,12 +228,26 @@ ec
 
 ```
 
-I use that as lightweight version of library(tidyverse) when I don't want or need to load the entire tidyverse - particular important for a production environment that needs to be trim.
+I use that as lightweight version of library(tidyverse) when I don't want or need to load all core tidyverse packages - particularly important for a production environment that needs to be trim.
 
-## ggplot2 GUI plot builder
+<br>
 
-from the package esquisse ![](images/esqui1.png)
+## ggplot2 GUI plot builder will provide code
 
-![](images/esqui2.png)
+`r emo::ji("smile")` Pro tip: If you are new to ggplot2, you can install the esquisse package, which also installs the ggplot2 builder addin, which you can use to build a plot using a GUI, then have the code, too!
 
-![](images/esqui3.png)
+![](images/esqui0.gif)  
+
+<br>
+
+### Before you start, click in the code chunk below, then go to the Addins and build your plot. When you clik to insert code it will be inserted where you cliked last in your script
+
+![](images/esqui3.gif)  
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+# click below here before starting the esquisse addin
+
+
+```
+
