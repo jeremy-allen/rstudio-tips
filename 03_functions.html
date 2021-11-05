@@ -223,7 +223,7 @@ clean_if_bad_names(x = df)</code></pre>
 <h1>But we don’t really need that silly function</h1>
 <p>clean_names() from the janitor package looks for more bad elements in names<br />
 How do we know?<br />
-😄 Pro tip: cmd+click on the function name below</p>
+😄 Pro tip: cmd+click or F2 on a function name to inspect it’s body</p>
 <pre class="r"><code>janitor::clean_names()</code></pre>
 <pre class="r"><code># we don&#39;t really need to test first, just clean the column names
 df &lt;- penguins_raw %&gt;% janitor::clean_names()</code></pre>
@@ -274,12 +274,12 @@ lm_peek &lt;- purrr::compose(
 
 # this
 lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pre>
-<div id="qsfyypeltf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="pfdlfsgoqb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#qsfyypeltf .gt_table {
+#pfdlfsgoqb .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -304,7 +304,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-left-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_heading {
+#pfdlfsgoqb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,7 +316,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-right-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_title {
+#pfdlfsgoqb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -326,7 +326,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-bottom-width: 0;
 }
 
-#qsfyypeltf .gt_subtitle {
+#pfdlfsgoqb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -336,13 +336,13 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-top-width: 0;
 }
 
-#qsfyypeltf .gt_bottom_border {
+#pfdlfsgoqb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_col_headings {
+#pfdlfsgoqb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -357,7 +357,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-right-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_col_heading {
+#pfdlfsgoqb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -377,7 +377,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   overflow-x: hidden;
 }
 
-#qsfyypeltf .gt_column_spanner_outer {
+#pfdlfsgoqb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -389,15 +389,15 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   padding-right: 4px;
 }
 
-#qsfyypeltf .gt_column_spanner_outer:first-child {
+#pfdlfsgoqb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qsfyypeltf .gt_column_spanner_outer:last-child {
+#pfdlfsgoqb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qsfyypeltf .gt_column_spanner {
+#pfdlfsgoqb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -409,7 +409,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   width: 100%;
 }
 
-#qsfyypeltf .gt_group_heading {
+#pfdlfsgoqb .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -431,7 +431,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   vertical-align: middle;
 }
 
-#qsfyypeltf .gt_empty_group_heading {
+#pfdlfsgoqb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -446,15 +446,15 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   vertical-align: middle;
 }
 
-#qsfyypeltf .gt_from_md > :first-child {
+#pfdlfsgoqb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qsfyypeltf .gt_from_md > :last-child {
+#pfdlfsgoqb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qsfyypeltf .gt_row {
+#pfdlfsgoqb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -473,7 +473,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   overflow-x: hidden;
 }
 
-#qsfyypeltf .gt_stub {
+#pfdlfsgoqb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -485,7 +485,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   padding-left: 12px;
 }
 
-#qsfyypeltf .gt_summary_row {
+#pfdlfsgoqb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -495,7 +495,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   padding-right: 5px;
 }
 
-#qsfyypeltf .gt_first_summary_row {
+#pfdlfsgoqb .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -505,7 +505,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-top-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_grand_summary_row {
+#pfdlfsgoqb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -515,7 +515,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   padding-right: 5px;
 }
 
-#qsfyypeltf .gt_first_grand_summary_row {
+#pfdlfsgoqb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,11 +525,11 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-top-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_striped {
+#pfdlfsgoqb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qsfyypeltf .gt_table_body {
+#pfdlfsgoqb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -538,7 +538,7 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-bottom-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_footnotes {
+#pfdlfsgoqb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -552,13 +552,13 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-right-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_footnote {
+#pfdlfsgoqb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#qsfyypeltf .gt_sourcenotes {
+#pfdlfsgoqb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -572,41 +572,41 @@ lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)</code></pr
   border-right-color: #D3D3D3;
 }
 
-#qsfyypeltf .gt_sourcenote {
+#pfdlfsgoqb .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#qsfyypeltf .gt_left {
+#pfdlfsgoqb .gt_left {
   text-align: left;
 }
 
-#qsfyypeltf .gt_center {
+#pfdlfsgoqb .gt_center {
   text-align: center;
 }
 
-#qsfyypeltf .gt_right {
+#pfdlfsgoqb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qsfyypeltf .gt_font_normal {
+#pfdlfsgoqb .gt_font_normal {
   font-weight: normal;
 }
 
-#qsfyypeltf .gt_font_bold {
+#pfdlfsgoqb .gt_font_bold {
   font-weight: bold;
 }
 
-#qsfyypeltf .gt_font_italic {
+#pfdlfsgoqb .gt_font_italic {
   font-style: italic;
 }
 
-#qsfyypeltf .gt_super {
+#pfdlfsgoqb .gt_super {
   font-size: 65%;
 }
 
-#qsfyypeltf .gt_footnote_marks {
+#pfdlfsgoqb .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
