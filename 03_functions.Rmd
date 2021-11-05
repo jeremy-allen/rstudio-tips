@@ -1,6 +1,6 @@
 ---
 title: "Functions"
-subtitle: "part 3 of the RStudio Tips and Tricks Series"
+subtitle: "Part 3 of the RStudio Tips and Tricks Series"
 author: "Jeremy Allen"
 date: "Nov 2, 2021, updated on `r Sys.Date()`"
 output: html_document

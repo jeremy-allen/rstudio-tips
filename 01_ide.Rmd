@@ -230,29 +230,11 @@ div(
 # git in the IDE (a very short intro)
 
 `r emo::ji("smile")` Pro tip: ctl+alt+m to open the commit window  
+`r emo::ji("smile")` Pro tip: can stage or discard chunks, even lines
 `r emo::ji("smile")` Pro tip: select first file then cmd+a to highlight all, then check one to check all
-
-In the git tab, click once on the row of the top item.\
-Then, cmd+a to select them all. Then, check one box to check them all.
-
-![](images/git_all.gif)\
-
-`r emo::ji("smile")` Pro tip: revert
-
-![](images/revert.gif)\
-
-Save, Commit, and Push, then
-
--   add a bunch of text below and save the file
-
--   go to the git tab
-
--   select this file
-
--   More
-
--   Revert, will revert file back to last commit  
 
 <br>
 
 [more on git in RStudio](https://r-pkgs.org/git.html#git-rstudio)
+
+Just a code addition that I actually don't want
