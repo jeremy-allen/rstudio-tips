@@ -1,6 +1,6 @@
 ---
 title: "Functions"
-subtitle: "part 3 of the Tips and Tricks Series"
+subtitle: "part 3 of the RStudio Tips and Tricks Series"
 author: "Jeremy Allen"
 date: "Nov 2, 2021, updated on `r Sys.Date()`"
 output: html_document
@@ -23,10 +23,11 @@ library(here)
 
 # Review
 
+- we made a new function - clean_if_bad_names()
 - shift+cmd+p for command palette
 - fun/if/for/lib/ec then shift+tab to add snippets
-- esquisse add-in to generate plot code in a GUI
-- alt-dash for assignment  
+- esquisse addin to generate plot code if new to ggplot2
+- alt+dash for assignment arrow 
 - cmd+up in console to see history
 
 # Functions - let's inspect!
@@ -34,13 +35,11 @@ library(here)
 ```{r }
 
 clean_if_bad_names <- function(x) {
-  
   if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
-    clean_names(x)
+    x <- clean_names(x)
+    x
   }
-  
   x
-  
 }
 
 # reset df
@@ -50,15 +49,25 @@ clean_if_bad_names(x = df)
 
 ```
 
+<br>
+
 # But we don't really need that silly function
 
-clean_names() from janitor looks for more bad elements in names\
+clean_names() from the janitor package looks for more bad elements in names\
 How do we know?\
-Pro tip: cmd-click on the function name below
+`r emo::ji("smile")` Pro tip: cmd+click on the function name below
 
 ```{r echo=TRUE, eval=FALSE}
 
 janitor::clean_names()
+
+```
+
+
+```{r}
+
+# we don't really need to test first, just clean the column names
+df <- penguins_raw %>% janitor::clean_names()
 
 ```
 
@@ -70,7 +79,10 @@ Then cmd click the internal function make_clean_names()\
 ![](images/inspect3.png)
 
 Now we see the internals on janitor's make_clean_names(), we see it cleans up apostrophes and other things our function didn't.\
+
 ![](images/inspect4.png)
+
+<br>
 
 # What other functions do you want to inspect?
 
@@ -80,78 +92,74 @@ dplyr::arrange()
 
 ```
 
-## Water cooler chat: Chunk options in gear
+<br>
+
+## Water cooler chat: Chunk options in gear icon
 
 In the chunk above, the options in the gear icon do not provide a way for:\
 `{r echo=TRUE, eval=FALSE}`\
-which means to show the code but do not run the code. Am I missing something?
+which means to show the code but do not run the code.
+
+<br>
 
 ## Function and snippet mashup
+`r emo::ji("smile")` combine some functions into one function using purrr::compose()  
 
-Have you seen people post these cool images of their code: ![](images/snip.png)  
+```{r}
 
-The [carbonate package](https://github.com/yonicd/carbonate) makes those.\
-We are going to combine some carbonate functions into one function using purrr::compose()
-
-```{r echo=TRUE, eval=FALSE}
-
-# compose the set of carbonate functions to open your copied code at the carbonate URL
-snip <- purrr::compose(
- ~ my_code$browse(),
- ~ assign(x$template, "one-dark", pos = ".GlobalEnv"),
- ~ assign("my_code", carbon$new(), pos = ".GlobalEnv"),
- ~ library(carbonate)
+not_in <- purrr::compose( # by default it runs bottom to top
+  `!`,
+  `%in%`
 )
 
 ```
 
-### Copy some code to your clipboard, then
 
-(will not work if your system does not have the xclip or xsel utility)
+```{r}
 
-```{r echo=TRUE, eval=FALSE}
-snip()
+not_in(3, c(1:2))
+not_in(1, c(1:2))
+not_in("January", month.name)
+
 ```
 
-More manually if you cannot grab code from your clipboard
+```{r compose, message=FALSE, warning=FALSE}
+library(broom)
+library(gt)
 
-```{r echo=TRUE, eval=FALSE}
-
-x <- carbon$new(
-  '
-  clean_if_bad_names <- function(x) {
-
-  if (any(str_detect(names(x), "[\\sA-Z()/-]"))) {
-    clean_names(x)
-  }
-
-}
-  '
+lm_peek <- purrr::compose(
+  .dir = "forward",
+  lm,
+  broom::tidy,
+  gt::gt,
+  ~tab_header(.x, title = "Results Preview")
 )
 
-# available templates
-x$get_templates()
-
-# chose one and send to browser
-x$template <- "one-dark"
-x$browse()
+# this
+lm_peek(culmen_depth_mm ~ flipper_length_mm + body_mass_g, data = df)
 
 ```
+
+<br>  
 
 # Back to IDE shortcuts for a moment
 
 ## Comment and not
-Pro tip: highlight multiple lines of code, shift-ctl-c to comment all  
+`r emo::ji("smile")` Pro tip: highlight multiple lines of code, shift-ctl-c to comment all  
 
 ![](images/comments.gif)
 
+<br>  
+
 ## Move line
-Pro tip: alt+up or alt+down to move lines  
+`r emo::ji("smile")` Pro tip: alt+up or alt+down to move lines  
 
 ![](images/move.gif)  
 
+<br>  
+
 ## Multi-line
-Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
+`r emo::ji("smile")` Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
 You try: add commas after starts_with() and mean  
 
 ```{r echo=TRUE, eval=FALSE}
@@ -169,8 +177,10 @@ df %>%
 
 ![](images/multi.gif)  
 
+<br>  
+
 ## Which parentheses?
-Pro tip: double click one of the parentheses to highlight what it contains  
+`r emo::ji("smile")` Pro tip: double click one of the parentheses to highlight what it contains  
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -200,10 +210,12 @@ div(
 ```
 
 ![](images/parens.gif)  
+<br>  
+
 # Back to functions!
 
 ## Got code?
-Pro tip: highlight code, then in Code menu, select 
+Pro tip: highlight code, then in Code menu, select extract function
 ```{r echo=TRUE, eval=FALSE}
 
 # in the code menu, select extract function
