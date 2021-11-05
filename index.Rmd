@@ -110,5 +110,10 @@ class: center middle
 #### Snippets
 #### Functions
 #### Search
+#### Index
 #### What are tips and tricks anyway?
+]
+
+.pull-right[
+#### We will spend the next few hours in the IDE, then return here for some final insights!
 ]
