@@ -1,6 +1,6 @@
 ---
 title: "IDE"
-subtitle: "part 1 of the Tips and Tricks Series"
+subtitle: "part 1 of the RStudio Tips and Tricks Series"
 author: "Jeremy Allen"
 date: "Nov 2, 2021, updated on `r Sys.Date()`"
 output: html_document
@@ -10,12 +10,12 @@ editor_options:
 
 Slides for the RStudio Tips and Tricks Series are available
 
-<https://jeremy-allen.github.io/rstudio-tps/> 
+<https://jeremy-allen.github.io/rstudio-tps/>
 
----
+------------------------------------------------------------------------
 
-<br>  
-<br>  
+<br>\
+<br>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -30,43 +30,77 @@ library(here)
 
 ```
 
+# Before we dive in, two things
+
+## Set preview in viewer pane
+
+![viewer pane](images/viewer_pane.gif "viewer pane setting")
+
+<br>  
+
+## Visual Editor will be our quick preview tool throughout this series
+
+![Visual Editor](images/ve.gif "Visual Editor")
+
+<br>
+
 # Adjusting Global Options in the RStudio IDE
 
-Pro tip: cmd+, to access global options
+`r emo::ji("smile")` Pro tip: cmd+, to access global options
 
-## rearrange panels
+<br>  
 
-![](images/panels.png)
+### Rearrange panels
 
-## change theme
+![](images/panels.png)  
 
-![](images/theme.png)
+<br>  
 
-## Show chunk output in console
+### Change theme
 
-![](images/output.png)
+![](images/theme.png)  
 
-## default R version &
+<br>  
 
-## don't save workspace data
+### Show chunk output in console
 
-![](images/r_version.png)
+![](images/output.png)  
 
-## set repo for RStudio Public Package Manager
+<br>  
 
-Pro tip: If you are on a Linux server, see what operating system you are on by running this in your console:\
-`system("lsb_release -a")`\
+### Default R version & don't save workspace data
+
+![](images/r_version.png)  
+
+<br>  
+
+### Set repo for RStudio Public Package Manager
+
+`r emo::ji("smile")` Pro tip: If you are on a Linux server, see what operating system you are on by running this in your console:\  
+
+<br>  
+
+`system("lsb_release -a")`  
+
+<br>  
+
 Then go to [RStudio Public Package Manager](https://packagemanager.rstudio.com/client/)
 
 ![](images/rspm.png)
 
-![](images/set_rspm.png)
+![](images/set_rspm.png)  
 
-## allow scroll past end of doc & rainbow parentheses
+<br>  
 
-![](images/scroll.png)
+## Allow scroll past end of doc & rainbow parentheses
 
-## shift+cmd+p then do anything
+![](images/scroll.png)  
+
+<br>  
+
+## Command Palette is amazing!
+
+`r emo::ji("smile")` shift+cmd+p then do anything
 
 Use shift+cmd+p to access the command palette and:
 
@@ -75,49 +109,135 @@ Use shift+cmd+p to access the command palette and:
 -   Knit Current Document
 -   Highlight Selected Line
 
-## adjust the code chunk options at the top of this file to hide code and re-knit
+<br>  
 
-## Expand the outliner
+## Adjust the code chunk options at the top of this file to hide code and re-knit
 
-Pro tip: Navigate your document with the outliner\
-also ctl+shift+o
+<br>  
 
-![](images/out1.png)\
-![](images/out2.png)\
+## Expand the outline
+
+`r emo::ji("smile")` Pro tip: Navigate your document with the outline 
+
+`r emo::ji("smile")` also ctl+shift+o
+
+![](images/out1.png) 
+
+![](images/out2.png) 
+
+<br>  
 
 ## Outline is also down here
 
 ![](images/out3.png)\
 
+<br>  
+
 # Code folding
 
-Go back up to the line "\#\# set repo for RStudio Public Package Manager"\
-Click the little triangle next to the line number
+Go back up to the line "set repo for RStudio Public Package Manager"\
+`r emo::ji("smile")` Click the little triangle next to the line number
 
 ![](images/fold.gif)\
 
+<br>  
+
 # Command History in the console
 
-pro tip: type a couple of letters then cmd+up for visual of matches or just up for last command
+`r emo::ji("smile")` Pro tip: type a couple of letters then cmd+up for visual of matches or just up for last command
 
 ![](images/history.gif) 
 
-# Open File in New Column!
+<br>  
 
-Pro tip: great for Shiny apps when you have ui, sever, and css files
+# Open File in New Column
+
+`r emo::ji("smile")` Pro tip: great for Shiny apps when you have ui, sever, and css files
 
 ![](images/columns.gif)\
 
-# git in the IDE
+<br>  
 
-Pro tip: cmd+a to select all
+# Comment and not
+`r emo::ji("smile")` Pro tip: highlight multiple lines of code, shift+ctl+c to comment all  
+
+![](images/comments.gif)
+
+<br>  
+
+# Move line
+`r emo::ji("smile")` Pro tip: alt+up or alt+down to move lines  
+
+![](images/move.gif)  
+
+<br>  
+
+# Multi-line
+`r emo::ji("smile")` Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
+You try: add commas after starts_with() and mean  
+
+```{r echo=TRUE, eval=FALSE}
+
+df %>% 
+  summarise(
+    across(
+      starts_with("culmen")
+      mean
+      na.rm = TRUE
+      )
+    )
+
+```
+
+![](images/multi.gif)  
+
+<br>  
+
+# Which parentheses?
+`r emo::ji("smile")` Pro tip: double click one of the parentheses to highlight what it contains  
+
+```{r echo=TRUE, eval=FALSE}
+
+
+div(
+  class = "outer",
+  div(
+    class = "container",
+    div(class = "data",
+        df %>% 
+          filter(
+            str_detect(Species, "Chin"),
+            Sex == "MALE",
+            Island == "Dream"
+          ) %>% 
+          summarise(
+            across(
+              starts_with("culmen"),
+              mean,
+              na.rm = TRUE
+            )
+          )
+    )
+  )
+)
+
+```
+
+![](images/parens.gif)  
+
+<br>  
+
+# git in the IDE (a very short intro)
+
+`r emo::ji("smile")` Pro tip: ctl+alt+m to open the commit window  
+`r emo::ji("smile")` Pro tip: select first file then cmd+a to highlight all, then check one to check all
 
 In the git tab, click once on the row of the top item.\
 Then, cmd+a to select them all. Then, check one box to check them all.
 
 ![](images/git_all.gif)\
 
-Pro tip: revert
+`r emo::ji("smile")` Pro tip: revert
 
 ![](images/revert.gif)\
 
@@ -127,8 +247,12 @@ Save, Commit, and Push, then
 
 -   go to the git tab
 
--   select file
+-   select this file
 
 -   More
 
--   Revert
+-   Revert, will revert file back to last commit  
+
+<br>
+
+[more on git in RStudio](https://r-pkgs.org/git.html#git-rstudio)
