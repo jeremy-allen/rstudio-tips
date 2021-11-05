@@ -4,3 +4,6 @@ rstudio-tips
 
 # Slides
 [https://jeremy-allen.github.io/rstudio-tips/](https://jeremy-allen.github.io/rstudio-tips/)
+
+# Code
+[https://github.com/jeremy-allen/rstudio-tips](https://github.com/jeremy-allen/rstudio-tips)
