@@ -36,12 +36,12 @@ meta() %>%
       "By Jeremy Allen, your guide, not guru"
     ),
     url = "https://jeremy-allen.github.io/rstudio-tips/#1",
-    # image = "https://raw.githubusercontent.com/jthomasmock/pkg-building/master/images/title-card.png",
-    # image_alt = paste(
-    #   "Title slide of RStudio Tips and Tricks.", 
-    #   "A slide deck covering tips and tricks in the RStudio IDE, tidyverse, and beyond.",
-    #   "It also has an image of a orange rubik cube with a blue heart in the middle."
-    # ),
+    image = "https://github.com/jeremy-allen/rstudio-tips/blob/main/images/title-card.png",
+    image_alt = paste(
+      "Title slide of RStudio Tips and Tricks.",
+      "A slide deck covering tips and tricks in the RStudio IDE, tidyverse, and beyond.",
+      "It also has an image of a skateboarder doing a trick."
+    ),
     og_type = "website",
     og_author = "Jeremy Allen",
     twitter_card_type = "summary_large_image",
