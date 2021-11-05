@@ -1,6 +1,6 @@
 ---
 title: "IDE"
-subtitle: "part 1 of the RStudio Tips and Tricks Series"
+subtitle: "Part 1 of the RStudio Tips and Tricks Series"
 author: "Jeremy Allen"
 date: "Nov 2, 2021, updated on `r Sys.Date()`"
 output: html_document
@@ -36,7 +36,7 @@ library(here)
 
 ![viewer pane](images/viewer_pane.gif "viewer pane setting")
 
-<br>  
+<br>
 
 ## Visual Editor will be our quick preview tool throughout this series
 
@@ -48,55 +48,55 @@ library(here)
 
 `r emo::ji("smile")` Pro tip: cmd+, to access global options
 
-<br>  
+<br>
 
 ### Rearrange panels
 
-![](images/panels.png)  
+![](images/panels.png)
 
-<br>  
+<br>
 
 ### Change theme
 
-![](images/theme.png)  
+![](images/theme.png)
 
-<br>  
+<br>
 
 ### Show chunk output in console
 
-![](images/output.png)  
+![](images/output.png)
 
-<br>  
+<br>
 
 ### Default R version & don't save workspace data
 
-![](images/r_version.png)  
+![](images/r_version.png)
 
-<br>  
+<br>
 
 ### Set repo for RStudio Public Package Manager
 
-`r emo::ji("smile")` Pro tip: If you are on a Linux server, see what operating system you are on by running this in your console:\  
+`r emo::ji("smile")` Pro tip: If you are on a Linux server, see what operating system you are on by running this in your console: 
 
-<br>  
+<br>
 
-`system("lsb_release -a")`  
+`system("lsb_release -a")`
 
-<br>  
+<br>
 
 Then go to [RStudio Public Package Manager](https://packagemanager.rstudio.com/client/)
 
 ![](images/rspm.png)
 
-![](images/set_rspm.png)  
+![](images/set_rspm.png)
 
-<br>  
+<br>
 
 ## Allow scroll past end of doc & rainbow parentheses
 
-![](images/scroll.png)  
+![](images/scroll.png)
 
-<br>  
+<br>
 
 ## Command Palette is amazing!
 
@@ -109,11 +109,11 @@ Use shift+cmd+p to access the command palette and:
 -   Knit Current Document
 -   Highlight Selected Line
 
-<br>  
+<br>
 
 ## Adjust the code chunk options at the top of this file to hide code and re-knit
 
-<br>  
+<br>
 
 ## Expand the outline
 
@@ -125,13 +125,13 @@ Use shift+cmd+p to access the command palette and:
 
 ![](images/out2.png) 
 
-<br>  
+<br>
 
 ## Outline is also down here
 
 ![](images/out3.png)\
 
-<br>  
+<br>
 
 # Code folding
 
@@ -140,7 +140,7 @@ Go back up to the line "set repo for RStudio Public Package Manager"\
 
 ![](images/fold.gif)\
 
-<br>  
+<br>
 
 # Command History in the console
 
@@ -148,7 +148,7 @@ Go back up to the line "set repo for RStudio Public Package Manager"\
 
 ![](images/history.gif) 
 
-<br>  
+<br>
 
 # Open File in New Column
 
@@ -156,25 +156,28 @@ Go back up to the line "set repo for RStudio Public Package Manager"\
 
 ![](images/columns.gif)\
 
-<br>  
+<br>
 
 # Comment and not
-`r emo::ji("smile")` Pro tip: highlight multiple lines of code, shift+ctl+c to comment all  
+
+`r emo::ji("smile")` Pro tip: highlight multiple lines of code, shift+ctl+c to comment all
 
 ![](images/comments.gif)
 
-<br>  
+<br>
 
 # Move line
-`r emo::ji("smile")` Pro tip: alt+up or alt+down to move lines  
 
-![](images/move.gif)  
+`r emo::ji("smile")` Pro tip: alt+up or alt+down to move lines
 
-<br>  
+![](images/move.gif)
+
+<br>
 
 # Multi-line
-`r emo::ji("smile")` Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor  
-You try: add commas after starts_with() and mean  
+
+`r emo::ji("smile")` Pro tip: ctl+alt+down or ctl+alt+up to have multi-line cursor\
+You try: add commas after starts_with() and mean
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -189,12 +192,13 @@ df %>%
 
 ```
 
-![](images/multi.gif)  
+![](images/multi.gif)
 
-<br>  
+<br>
 
 # Which parentheses?
-`r emo::ji("smile")` Pro tip: double click one of the parentheses to highlight what it contains  
+
+`r emo::ji("smile")` Pro tip: double click one of the parentheses to highlight what it contains
 
 ```{r echo=TRUE, eval=FALSE}
 
@@ -223,18 +227,18 @@ div(
 
 ```
 
-![](images/parens.gif)  
+![](images/parens.gif)
 
-<br>  
+<br>
 
 # git in the IDE (a very short intro)
 
-`r emo::ji("smile")` Pro tip: ctl+alt+m to open the commit window  
-`r emo::ji("smile")` Pro tip: can stage or discard chunks, even lines
+`r emo::ji("smile")` Pro tip: ctl+alt+m to open the commit window\
+`r emo::ji("smile")` Pro tip: can stage or discard chunks, even lines  
 `r emo::ji("smile")` Pro tip: select first file then cmd+a to highlight all, then check one to check all
+
+![Git discard](images/git_discard.gif)
 
 <br>
 
 [more on git in RStudio](https://r-pkgs.org/git.html#git-rstudio)
-
-Just a code addition that I actually don't want
