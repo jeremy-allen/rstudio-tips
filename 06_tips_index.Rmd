@@ -12,7 +12,7 @@ editor_options:
 <br>
 <br>
 
-# List of all `r emo::ji("smile")` Pro tips from the series
+# List of all `r emo::ji("smile")` pro tips from the series
 
 ## Settings  
 `r emo::ji("smile")` Pro tip: cmd+, to access global options and do all sorts of things like change appearance, change layout, set up package repos, git, Python interpreter and more!  
