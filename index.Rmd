@@ -35,7 +35,7 @@ meta() %>%
       "Tips and tricks in the RStudio IDE, tidyverse, and beyond",
       "By Jeremy Allen, your guide, not guru"
     ),
-    url = "https://jeremy-allen.github.io/rstudio-tips/#1",
+    url = "https://jeremy-allen.github.io/rstudio-tips/",
     image = "https://github.com/jeremy-allen/rstudio-tips/blob/main/images/title-card.png",
     image_alt = paste(
       "Title slide of RStudio Tips and Tricks.",
