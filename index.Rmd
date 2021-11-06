@@ -165,3 +165,4 @@ class: title-slide, left, top
 ##### `r fontawesome::fa("link", "white")` Slides   [https://jeremy-allen.github.io/rstudio-tips/#1](https://jeremy-allen.github.io/rstudio-tips/#1)
 ##### `r fontawesome::fa("github", "white")` Code   [github.com/jeremy-allen/rstudio-tips](https://github.com/jeremy-allen/rstudio-tips)
 ##### `r fontawesome::fa("twitter", "white")` Twitter  [@jeremy_data](https://twitter.com/jeremy_data)
+##### `r fontawesome::fa("envelope", "white")` Email  [jeremy.allen@rstudio.com](jeremy.allen@rstudio.com)
