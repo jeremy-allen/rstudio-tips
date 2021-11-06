@@ -117,3 +117,11 @@ class: center middle
 .pull-right[
 #### We will spend the next few hours in the IDE, then return here for some final insights!
 ]
+
+---
+
+class: inverse center middle
+
+# What are tips and tricks?
+
+
