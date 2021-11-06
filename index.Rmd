@@ -81,9 +81,13 @@ layout: true
 
 ---
 
-class: center middle
+.pull-left[
+![:scale 95%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
+]
 
-![:scale 45%](https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/novice_vs_experienced.png)
+.pull-right[
+## R is a journey
+]
 
 ---
 
@@ -124,4 +128,28 @@ class: inverse center middle
 
 # What are tips and tricks?
 
+---
 
+## They are perspectives
+
+On the same thing  
+
+--
+  
+But feel different  
+
+--
+  
+To the novice - a bit of enchantment  
+
+--
+  
+To the experienced - a bit of expertise  
+
+--
+
+<div style = "position: absolute;top: 0px;right: 0;"><img src="https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/skateboard_in_pool_sunset.png" alt="A person jumping their skateboard at the skate park at sunset." width="525"></img></div>
+
+<div style = "position: absolute;bottom: 5px;right: 5px;font-size: .25rem;color: #fff;z-index: 999;"><p>Photo by <a href="https://unsplash.com/@nadineshaabana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadine Shaabana</a> on <a href="https://unsplash.com/s/photos/tricks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></div>
+
+---
