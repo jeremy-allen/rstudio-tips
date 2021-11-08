@@ -130,7 +130,13 @@ class: inverse center middle
 
 ---
 
+<div style = "position: absolute;top: 0px;right: 0;"><img src="https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/skateboard_in_pool_sunset.png" alt="A person jumping their skateboard at the skate park at sunset." width="525"></img></div>
+
+<div style = "position: absolute;bottom: 0;right: 5px;font-size: .25rem;"><p>Photo by <a href="https://unsplash.com/@nadineshaabana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadine Shaabana</a> on <a href="https://unsplash.com/s/photos/tricks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></div> 
+
 ## They are perspectives
+
+--
 
 On the same thing  
 
@@ -148,9 +154,17 @@ To the experienced - a bit of expertise
 
 --
 
-<div style = "position: absolute;top: 0px;right: 0;"><img src="https://raw.githubusercontent.com/jeremy-allen/rstudio-tips/main/images/skateboard_in_pool_sunset.png" alt="A person jumping their skateboard at the skate park at sunset." width="525"></img></div>
+Expertise is a social process by which we are  
+taught in different contexts what is irrelevant  
+and forgettable and what is important for focus.  
+Tips and tricks are what remain in a situation  
+once we ignore everything irrelevant.  
 
-<div style = "position: absolute;bottom: 0;right: 5px;font-size: .25rem;"><p>Photo by <a href="https://unsplash.com/@nadineshaabana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadine Shaabana</a> on <a href="https://unsplash.com/s/photos/tricks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p></div>
+---
+
+Zerubavel, Eviatar. Hidden in Plain Sight: The Social Structure of Irrelevance. United Kingdom: Oxford University Press, 2015.  
+
+Galison, Peter., Daston, Lorraine. Objectivity. United States: Zone Books, 2021.  
 
 ---
 
