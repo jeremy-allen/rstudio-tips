@@ -230,7 +230,7 @@ div(
 
 ![](images/parens.gif)
 
-\<br
+<br>
 
 # Execute long-running code in jobs
 
