@@ -229,17 +229,18 @@ div(
 
 ![](images/parens.gif)
 
-<br
+\<br
 
 # Execute long-running code in jobs
-`r emo::ji("smile")` Pro tip: execute code or scripts as jobs in separate R sessions so you can keep working in your IDE  
 
-![Jobs](images/job1.gif)  
+`r emo::ji("smile")` Pro tip: execute code or scripts as jobs in separate R sessions so you can keep working in your IDE
+
+![Jobs](images/job1.gif)
 
 # git in the IDE (a very short intro)
 
 `r emo::ji("smile")` Pro tip: ctl+alt+m to open the commit window\
-`r emo::ji("smile")` Pro tip: can stage or discard chunks, even lines  
+`r emo::ji("smile")` Pro tip: can stage or discard chunks, even lines\
 `r emo::ji("smile")` Pro tip: select first file then cmd+a to highlight all, then check one to check all
 
 ![Git discard](images/git_discard.gif)
