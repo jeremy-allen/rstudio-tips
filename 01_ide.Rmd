@@ -207,7 +207,8 @@ div(
   class = "outer",
   div(
     class = "container",
-    div(class = "data",
+    div(
+      class = "data",
         df %>% 
           filter(
             str_detect(Species, "Chin"),
