@@ -3,14 +3,31 @@ title: "IDE"
 subtitle: "Part 1 of the RStudio Tips and Tricks Series"
 author: "Jeremy Allen"
 date: "Nov 2, 2021, updated on `r Sys.Date()`"
-output: html_document
+output:
+  html_document:
+    highlight: zenburn
+    theme:
+      bg: "#303436"
+      fg: "#9da9af"
+      primary: "#ff8080"
+      base_font:
+        google: "Roboto"
+      code_font:
+        google: "JetBrains Mono"
 editor_options: 
   chunk_output_type: console
----
+self_contained: true
+---  
+  
+------------------------------------------------------------------------
 
-Slides for the RStudio Tips and Tricks Series are available
+Slides for the RStudio Tips and Tricks Series:  
 
-<https://jeremy-allen.github.io/rstudio-tps/>
+<https://jeremy-allen.github.io/rstudio-tps/>  
+
+Code:  
+
+<https://github.com/jeremy-allen/rstudio-tips>
 
 ------------------------------------------------------------------------
 
